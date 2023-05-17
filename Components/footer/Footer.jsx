@@ -4,6 +4,12 @@ import { ArrowRight, Facebook, Instagram, KeyboardArrowRight, KeyboardArrowUp, L
 
 
 const Footer = () => {
+
+    function scrollToTop() {
+        scroll.scrollToTop();
+    }
+
+
     return (
         <div className={styles.footer}>
             <div className={styles.top}>
@@ -38,6 +44,7 @@ const Footer = () => {
                         <span>Team</span>
                     </div>
                     <div className={styles.four}>
+                    
                         <span className={styles.arrowRightHolder}> <KeyboardArrowUp /></span>
                         <div className={styles.socialLinks}>
                             <span> <Facebook /> </span>

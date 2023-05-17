@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+.about {
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+    padding-top: 50px;
+    font-family: 'Archivo', sans-serif;
+
+
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 22px;
+    font-family: 'Archivo', sans-serif;
+
+
+        .socialPics {
+            display: flex;
+            gap: 22px;
+
+            img {
+                width: 100%;
+                height: 40px;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+
+
+        .wrapper {
+            width: 1200px;
+
+            .bottomTopWrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 22px;
+                padding-bottom: 50px;
+                height: 210px;
+
+                h6 {
+                    font-size: 16px;
+                    color: #375BDC;
+                }
+
+                h1 {
+                    font-size: 30px;
+                    color: #121212;
+                }
+
+                .para {
+
+                    color: #5E5E5E;
+                    font-size: 14px;
+                    width: 40%;
+                    line-height: 18px;
+                }
+            }
+            .line {
+                width: 50.5%;
+                border: 0.5px solid #c1c1c1b2;
+                margin-bottom: 32px;
+            }
+            .ratings {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+    
+                .ratingsItem {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .headItem {
+                        font-weight: 600;
+                        font-size: 20px;
+                        color: #121212;
+                    }
+                    .bodyItem {
+                        font-weight: 400;
+                        font-size: 12px;
+                        color: #121212;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

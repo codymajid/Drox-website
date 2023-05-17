@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
+
+.contact {
+    width: 100%;
+    padding-top: 50px;
+    font-family: 'Archivo', sans-serif;
+    height: 100vh;
+    background-color: #040D22;
+    color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            margin-bottom: 12px;
+        }
+
+        .topPara {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+            color: #F2F2F2;
+            font-size: 14px;
+        }
+    }
+
+    .bottom {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .wrapper {
+            width: 880px;
+            height: 600px;
+            border-radius: 8px;
+            box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
+            -webkit-box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
+            -moz-box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
+            display: flex;
+
+            .left {
+                flex: 0.7;
+                display: flex;
+                flex-direction: column;
+                gap: 55px;
+                padding-left: 44px;
+                padding-top: 55px;
+                background-color: #040d22;
+
+                h2 {
+                    color : #F2F2F2;
+                    font-size: 26px;
+
+                }
+
+                .headerPara {
+                    color: #F2F2F2;
+                    font-size: 13px;
+                    width: 75%;
+                }
+
+                .contactWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                }
+
+
+                .socialLinks {
+                    display: flex;
+                    gap: 33px;
+                    // margin-top: 22px;
+                    transition: all 0.5s ease;
+
+                    span {
+                        cursor: pointer;
+                    transition: all 0.5s ease;
+
+                        font-size: 22px;
+
+                        &:nth-child(1) {
+                            &:hover {
+                                color: #4267B2;
+                            }
+                        }
+
+
+                        &:nth-child(2) {
+                            &:hover {
+                                color: #1DA1F2;
+                            }
+                        }
+
+
+                        &:nth-child(3) {
+                            &:hover {
+                                color: #E1306C;
+                            }
+                        }
+
+                        &:hover {
+                            transform: scale(1.2);
+                            transform: translateY(-3px);
+                        }
+                    }
+                }
+            }
+
+            .rightWrapper {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .right {
+                    background-color: white;
+                    width: 85%;
+                    height: 90%;
+                    border-radius: 12px;
+                    padding: 32px 22px 22px 22px;
+
+                    .wraperFields {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 12px;
+
+                        .inputWrapper {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            gap: 2px;
+
+                            label {
+                                    font-size: 13px;
+                                    color: #121212;
+                                }
+
+                                .inputFields {
+                                    max-width: 180px;
+                                    border: none;
+                                    border: 0.5px solid #5E5E5E;
+                                    height: 35px;
+                                    border-radius: 5px;
+                                    outline: none;
+                                    padding: 6px;
+                                }
+                        }
+                    }
+
+                    .singleWrapper {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: start;
+                        gap: 2px;
+                        margin-top: 12px;
+
+
+                        label {
+                            font-size: 13px;
+                            color: #121212;
+                        }
+
+                        .textArea {
+                            padding: 12px;
+                            border: none;
+                            border: 0.5px solid #5E5E5E;
+                        }
+
+                        .singleInput {
+                            border: none;
+                            border: 0.5px solid ;
+                            height: 35px;
+                            border-radius: 5px;
+                            outline: none;
+                            padding: 6px;
+                            color: #5E5E5E;
+
+                        }
+                    }
+
+                    .mobileNumber {
+                        display: flex;
+                        color: black;
+                        flex-direction: column;
+                        margin-top: 12px;
+
+                        label {
+                            font-size: 13px;
+                            color: #121212;
+                        }
+                        .singleInput {
+                            border: none;
+                            border: 0.5px solid #5E5E5E;
+                            height: 35px;
+                            border-radius: 5px;
+                            outline: none;
+                            padding: 6px;
+
+                            input {
+                                background-color: transparent;
+                                border: none;
+                                border-radius: 5px;
+                                outline: none;
+                                padding: 6px;
+                                }
+
+                        }
+                    }
+
+                    .msgBtn {
+                        color: #F2F2F2;
+                        background: linear-gradient(212.88deg, #030D76 13.15%, #375BDC 100.45%);
+                        border-radius: 6px;
+                        cursor: pointer;
+                        padding: 8px;
+                        font-size: 13px;
+                        width: 120px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

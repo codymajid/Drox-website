@@ -3,45 +3,42 @@
 .service {
     width: 100%;
     height: max-content;
-    background-color: #040D22;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 70px;
+    background-color: #040D22;
     font-family: 'Archivo', sans-serif;
 
     .wrapper {
-        width: 1050px;
-        height: 100%;
-        padding-top: 80px;
         display: flex;
         flex-direction: column;
+        width: 70%;
+        height: 100%;
 
-        .heading {
+        .top {
             display: flex;
             flex-direction: column;
-            gap: 3px;
-            padding-bottom: 44px;
+            gap: 6px;
+            padding-bottom: 50px;
 
-            .headPara {
-                font-size: 15px;
+            span {
                 color: #375BDC;
+                font-size: 14px;
             }
 
-            h1 {
+            h3 {
                 color: #F2F2F2;
+                font-size: 34px;
             }
 
-            .paragraph {
+            p {
                 color: #C1C1C1;
-                font-size: 13px;
-                width: 25%;
-                line-height: 18px;
+                font-size: 14px;
+                width: 28%;
             }
         }
 
-        .serviceBottom {
-            
-        }
+        .bottom {}
     }
 }

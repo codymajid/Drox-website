@@ -12,16 +12,13 @@ const Service = () => {
     return (
         <div className={styles.service}>
             <div className={styles.wrapper}>
-                <div className={styles.heading}>
-                    <p className={styles.headPara}> Our Services</p>
-                    <h1> What Service We Offer </h1>
-                    <p className={styles.paragraph}>Let’s talk about our services which can add value to your company and your ideas</p>
+                <div className={styles.top}>
+                    <span> Our Services</span>
+                    <h3>  What Service We Offer</h3>
+                    <p> Let’s talk about our services which can add value to your company and your ideas </p>
                 </div>
-                <div className={styles.serviceBottom}>
-                    <ServiceComp data={Type1} title={Type1Title} text={Type1Para} image={Image1} />
-                    {/* <ServiceComp data = {Type2} title = {Type2Title} text = {Type2Para} image = {Image2} />
-                    <ServiceComp data = {Type3} title = {Type3Title} text = {Type3Para} image = {Image3} style={style1} />
-                    <ServiceComp data = {Type4} title = {Type4Title} text = {Type4Para} image = {Image4} style={style2} /> */}
+                <div className={styles.bottom}>
+                <ServiceComp data = {Type2} title = {Type2Title} text = {Type2Para} image = {Image2} /> 
                 </div>
             </div>
         </div>

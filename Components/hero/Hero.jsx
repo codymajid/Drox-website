@@ -7,7 +7,7 @@ import RightImage from '../../images/right-hero.png'
 
 const Hero = () => {
     return (
-        <div className={styles.hero}>
+        <div className={styles.hero} id='hero'>
             <div className={styles.leftHeroShadow}></div>
             <div className={styles.rightHeroShadow}></div>
             <div className={styles.top}>

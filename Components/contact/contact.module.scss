@@ -2,20 +2,21 @@
 
 .contact {
     width: 100%;
-    padding-top: 50px;
+   height: max-content;
     font-family: 'Archivo', sans-serif;
-    height: 100vh;
     background-color: #040D22;
     color: #F2F2F2;
     display: flex;
     flex-direction: column;
+    // background-color: pink !important;
 
     .top {
-        flex: 0.5;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: 200px;
+        padding: 50px;
 
         h1 {
             margin-bottom: 12px;
@@ -33,19 +34,21 @@
     }
 
     .bottom {
-        flex: 2;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 700px;
 
         .wrapper {
             width: 880px;
             height: 600px;
             border-radius: 8px;
-            box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
-            -webkit-box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
-            -moz-box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
             display: flex;
+            // box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
+            // -webkit-box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
+            // -moz-box-shadow: -2px 6px 139px 0px rgba(175, 190, 255, 0.72);
+            -webkit-box-shadow: -7px 4px 50px 9px rgba(229,229,229,0.11); 
+            box-shadow: -7px 4px 50px 9px rgba(229,229,229,0.11);
 
             .left {
                 flex: 0.7;
@@ -54,7 +57,9 @@
                 gap: 55px;
                 padding-left: 44px;
                 padding-top: 55px;
-                background-color: #040d22;
+               
+                // background-color: #040d22;
+                
 
                 h2 {
                     color : #F2F2F2;
@@ -74,16 +79,15 @@
                     gap: 18px;
                 }
 
-
                 .socialLinks {
                     display: flex;
                     gap: 33px;
-                    // margin-top: 22px;
+                    margin-top: 85px;
                     transition: all 0.5s ease;
 
                     span {
                         cursor: pointer;
-                    transition: all 0.5s ease;
+                        transition: all 0.5s ease;
 
                         font-size: 22px;
 
@@ -93,13 +97,11 @@
                             }
                         }
 
-
                         &:nth-child(2) {
                             &:hover {
                                 color: #1DA1F2;
                             }
                         }
-
 
                         &:nth-child(3) {
                             &:hover {
@@ -173,6 +175,7 @@
                             padding: 12px;
                             border: none;
                             border: 0.5px solid #5E5E5E;
+                            outline: none;
                         }
 
                         .singleInput {
@@ -221,7 +224,7 @@
                         cursor: pointer;
                         padding: 8px;
                         font-size: 13px;
-                        width: 120px;
+                        width: 130px;
                         text-align: center;
                         display: flex;
                         justify-content: center;

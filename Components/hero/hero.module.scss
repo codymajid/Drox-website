@@ -1,107 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
-
 .hero {
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 9999;
-    font-family: 'Archivo', sans-serif;
-    background-color: #040D22;
+    height: max-content;
     color: #F2F2F2;
+    position: relative;
+    overflow: hidden;
+    background-color: #040D22;
 
-    .wrapper {
-        padding-top: 75px;
-        position: relative;
+    .leftHeroShadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(53.82deg, #375BDC 10.33%, #000971 84.3%);
+        filter: blur(150px);
+        width: 200px;
+        height: 150px;
+    }
 
+        // .rightHeroShadow {
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        //     background-color: lightcoral;
+        //     width: 200px;
+        //     height: 300px;
+        // }
 
-        .shadowTopLeft {
-            width: 300px;
-            height: 200px;
-            background: linear-gradient(53.82deg, #375BDC 10.33%, #000971 84.3%);
-            filter: blur(120px);
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
+    .top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 0px;
 
-        .shadowRightLeft {
-            width: 300px;
-            height: 280px;
-            background: linear-gradient(212.88deg, #AFBEFF 13.15%, #F2F2F2 100.45%);
-            filter: blur(200px);
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        .top {
+        .head {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 22px;
-
 
             h1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
                 font-size: 52px;
+                color: #F2F2F2;
             }
+        }
+        .paragraphHero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
 
-            .heroPara {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+            span {
+                font-size: 13px;
                 color: #C1C1C1;
-
-
-                span {
-                    color: #C1C1C1;
-                }
-            }
-
-            .heroQuote {
-                background: linear-gradient(212.88deg, #AFBEFF 13.15%, #F2F2F2 100.45%);
-                border-radius: 6px;
-                color: #121212;
-                width: 140px;
-                height: 43px;
-                border: none;
-                outline: none;
-                cursor: pointer;
             }
         }
 
-        .bottom {
-            margin-top: 55px;
-            height: 48vh;
-            position: relative;
+        button {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            color: #121212;
+            background: linear-gradient(212.88deg, #AFBEFF 13.15%, #F2F2F2 100.45%);
+            padding: 6px 18px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 500;
+            margin-bottom: 22px;
+            margin-top: 22px;
+        }
+    }
+    .bottom {
+        .wrapperImages {
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            .wrapperImages {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .mainImg {
-                    z-index: 999;
-                    margin-left: -52px;
-                    margin-right: -52px;
-
-                    img {
-                            border-radius: 15px;
-                        }
-                }
-            }
-
-            .wrapperBottom {
-                height: 15vh;
-                width: 100%;
-                background-color: white;
-                position: absolute;
-                bottom: -110px;
+            .mainImage {
+                z-index: 100;
+                margin-left: -82px;
+                margin-right: -92px;
             }
         }
+    }
+    .bottomWrapper {
+        position: absolute;
+        bottom: -52px;
+        width: 100%;
+        height: 20vh;
+        background-color: white;
     }
 }

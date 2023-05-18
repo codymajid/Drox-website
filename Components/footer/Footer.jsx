@@ -5,11 +5,6 @@ import { ArrowRight, Facebook, Instagram, KeyboardArrowRight, KeyboardArrowUp, L
 
 const Footer = () => {
 
-    function scrollToTop() {
-        scroll.scrollToTop();
-    }
-
-
     return (
         <div className={styles.footer}>
             <div className={styles.top}>

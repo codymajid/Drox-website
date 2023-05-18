@@ -24,14 +24,6 @@ const Navbar = () => {
         }
     }, [])
 
-
-    const getPath = (id) => {
-        let element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ top: 0, behavior: "smooth" })
-        }
-    }
-
     return (
         <div className={styles.navbar}>
             <div className={styles.wrapper}>
@@ -51,11 +43,13 @@ const Navbar = () => {
                 </div>
                 <div className={styles.middle}>
                     {/* <span className={styles.active} onClick={() => { getPath("home") }}> Home </span> */}
-                    <Link to='home' spy={true} smooth={true} style={{color : "inherit", textDecoration : "none", cursor : "pointer"}} offset={0}> Home </Link>
-                    <Link to='about' spy={true} smooth={true} style={{color : "inherit", textDecoration : "none", cursor : "pointer"}} offset={-50}> About Us </Link>
+                    <Link to='home' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={0}> Home </Link>
+                    <Link to='about' spy={true}  duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-50}> About Us </Link>
                 </div>
                 <div className={styles.right}>
+                    <Link to='contact' spy={true} smooth={true} duration={200} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-30} >
                     <button> Contact Us </button>
+                    </Link>
                 </div>
             </div>
         </div>

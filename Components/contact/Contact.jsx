@@ -9,7 +9,7 @@ const Contact = () => {
     const [value, setValue] = useState()
     
     return (
-        <div className={styles.contact}>
+        <div className={styles.contact} id='contact'>
             <div className={styles.top}>
                 <h1> Get In Touch With Us</h1>
                 <div className={styles.topPara}>

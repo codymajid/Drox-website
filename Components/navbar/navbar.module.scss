@@ -25,7 +25,7 @@
             top: 0;
             background: linear-gradient(53.82deg, #375BDC 10.33%, #000971 84.3%);
             filter: blur(50px);
-            width: 340px;
+            width: 150px;
             height: 60px;
         }
 
@@ -44,10 +44,33 @@
             display: flex;
             justify-content: start;
             align-items: center;
-            gap: 2px;
+            gap: 12px;
+
+            // .logoWrapper {
+            //     width: 30px;
+            //     height: 30px;
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+            //     overflow: hidden;
+
+            //     img {
+            //         width: 100%;
+            //         object-fit: cover;
+            //     }
+            // }
+
+                img {
+                    width: 35px;
+                    height: 35px;
+                    margin-right: 3px;
+                }
+
 
             span {
                 cursor: pointer;
+                color: #F2F2F2;
+                z-index: 199;
             }
 
             .leftLogo {

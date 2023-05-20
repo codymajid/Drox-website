@@ -3,6 +3,8 @@ import styles from './navbar.module.scss';
 import { Add, InsertComment, WindowOutlined } from '@mui/icons-material';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-scroll';
+import Image from 'next/image';
+import Logo from '../../images/header-logo.png'
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false)
@@ -38,9 +40,10 @@ const Navbar = () => {
                     )
                 }
                 <div className={styles.left}>
-                <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-60}>
-                    <span> <InsertComment className={styles.leftLogo} /> </span>
-                    <span> DROX LABS. </span>
+                    <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-60}>
+                        {/* <span> <InsertComment className={styles.leftLogo} /> </span> */}
+                        <Image src={Logo} alt='logo' />
+                        <span> DROX LABS. </span>
                     </Link>
                 </div>
                 <div className={styles.middle}>

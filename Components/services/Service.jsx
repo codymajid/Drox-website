@@ -18,7 +18,10 @@ const Service = () => {
                     <p> Let’s talk about our services which can add value to your company and your ideas </p>
                 </div>
                 <div className={styles.bottom}>
+                <ServiceComp data = {Type1} title = {Type1Title} text = {Type1Para} image = {Image1} /> 
                 <ServiceComp data = {Type2} title = {Type2Title} text = {Type2Para} image = {Image2} /> 
+                <ServiceComp data = {Type3} title = {Type3Title} text = {Type3Para} image = {Image3} /> 
+                <ServiceComp data = {Type4} title = {Type4Title} text = {Type4Para} image = {Image4} /> 
                 </div>
             </div>
         </div>

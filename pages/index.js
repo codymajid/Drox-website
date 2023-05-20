@@ -7,6 +7,7 @@ import Contact from '@/Components/contact/Contact'
 import Footer from '@/Components/footer/Footer'
 
 
+
 export default function Home() {
   return (
     <>
@@ -16,12 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <Hero />
-      <About />
       <Service />
-      <Contact />
-      <Footer />
     </>
   )
 }

@@ -1,3 +1,69 @@
 .serviceComp {
-    
+    width: 100%;
+    height: max-content;
+    display: flex;
+
+    .left {
+        flex: 0.8;
+        display: flex;
+        gap: 22px;
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .circle {
+                font-size: 12px;
+            }
+
+            .rulerHolder {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .rulerLine {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .info {
+            padding-top: 2px;
+            h4 {
+                color: #F2F2F2;
+                font-size: 20px;
+            }
+
+            p {
+                color: #C1C1C1;
+                font-size: 14px;
+                width: 80%;
+                line-height: 22px;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                li {
+                    span {
+                        color: #F2F2F2;
+                        font-size: 15px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .right {
+        flex: 2;
+        background-color: pink;
+    }
 }

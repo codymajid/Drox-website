@@ -25,7 +25,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <div className={styles.navbar}>
+        <div className={styles.navbar} >
             <div className={styles.wrapper}>
                 {
                     !isScrolled
@@ -42,8 +42,8 @@ const Navbar = () => {
                     <span> DROX LABS. </span>
                 </div>
                 <div className={styles.middle}>
-                    {/* <span className={styles.active} onClick={() => { getPath("home") }}> Home </span> */}
-                    <Link to='home' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={0}> Home </Link>
+                    {/* <span className={styles.active}> Home </span> */}
+                    <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-60}> Home </Link>
                     <Link to='about' spy={true}  duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-50}> About Us </Link>
                 </div>
                 <div className={styles.right}>

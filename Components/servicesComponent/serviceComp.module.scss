@@ -2,9 +2,10 @@
     width: 100%;
     height: max-content;
     display: flex;
+    height: 400px;
 
     .left {
-        flex: 0.8;
+        flex: 0.9;
         display: flex;
         gap: 22px;
 
@@ -12,33 +13,32 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
 
             .circle {
                 font-size: 12px;
             }
 
             .rulerHolder {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                height: 100%;
 
                 .rulerLine {
                     opacity: 1;
+                    height: 100%;
                 }
             }
         }
 
         .info {
             padding-top: 2px;
+
             h4 {
                 color: #F2F2F2;
-                font-size: 20px;
+                font-size: 18px;
             }
 
             p {
                 color: #C1C1C1;
-                font-size: 14px;
+                font-size: 13px;
                 width: 80%;
                 line-height: 22px;
             }
@@ -54,16 +54,14 @@
                 li {
                     span {
                         color: #F2F2F2;
-                        font-size: 15px;
+                        font-size: 13px;
                     }
                 }
-
             }
         }
     }
 
     .right {
         flex: 2;
-        background-color: pink;
     }
 }

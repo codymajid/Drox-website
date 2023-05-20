@@ -10,8 +10,8 @@ const ServiceComp = ({ data, title, text, image, style }) => {
             <div className={styles.left}>
                 <div className={styles.steps}>
                     <span> <PanoramaFishEye className={styles.circle}/> </span>
-                    <div className={styles.rulerHolder} style={{ height: "200px" }}>
-                        <div className={`${styles.rulerLine} vr`} style={{ height: "200px" }}></div>
+                    <div className={styles.rulerHolder}>
+                        <div className={`${styles.rulerLine} vr`}></div>
                     </div>
                 </div>
                 <div className={styles.info}>

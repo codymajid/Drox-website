@@ -57,9 +57,7 @@
                 gap: 55px;
                 padding-left: 44px;
                 padding-top: 55px;
-               
                 // background-color: #040d22;
-                
 
                 h2 {
                     color : #F2F2F2;
@@ -148,12 +146,17 @@
 
                                 .inputFields {
                                     max-width: 180px;
+                                    min-width: 180px;
                                     border: none;
                                     border: 0.5px solid #5E5E5E;
                                     height: 35px;
                                     border-radius: 5px;
                                     outline: none;
                                     padding: 6px;
+                                }
+
+                                .inputFields[type = 'text'] {
+                                    font-size: 13px;
                                 }
                         }
                     }
@@ -186,6 +189,10 @@
                             outline: none;
                             padding: 6px;
                         }
+
+                        .singleInput[type = 'text'] {
+                            font-size: 13px;
+                        }
                     }
 
                     .mobileNumber {
@@ -214,7 +221,7 @@
                                 padding: 6px;
                                 }
 
-                        }
+                            }
                     }
 
                     .msgBtn {

@@ -48,8 +48,8 @@ const Navbar = () => {
                 </div>
                 <div className={styles.middle}>
                     {/* <span className={styles.active}> Home </span> */}
-                    <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-60}> Home </Link>
-                    <Link to='about' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-50}> About Us </Link>
+                    <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-60} activeClass={styles.active}> Home </Link>
+                    <Link to='about' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-50} activeClass={styles.active}> About Us </Link>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.btnWrapper}>

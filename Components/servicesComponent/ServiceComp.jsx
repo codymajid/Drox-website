@@ -4,7 +4,6 @@ import styles from './serviceComp.module.scss';
 import Image from 'next/image';
 
 const ServiceComp = ({ data, title, text, image, style }) => {
-
     return (
         <div className={styles.serviceComp}>
             <div className={styles.left}>
@@ -31,7 +30,7 @@ const ServiceComp = ({ data, title, text, image, style }) => {
             <div className={styles.right}>
                 <div className={styles.shadowR}></div>
                 <div className={styles.wrapperImages} style={style} >
-                    <Image src={image} />
+                    <Image src={image} alt='service-image' />
                 </div>
             </div>
         </div>

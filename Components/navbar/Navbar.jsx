@@ -38,18 +38,22 @@ const Navbar = () => {
                     )
                 }
                 <div className={styles.left}>
+                <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-60}>
                     <span> <InsertComment className={styles.leftLogo} /> </span>
                     <span> DROX LABS. </span>
+                    </Link>
                 </div>
                 <div className={styles.middle}>
                     {/* <span className={styles.active}> Home </span> */}
                     <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-60}> Home </Link>
-                    <Link to='about' spy={true}  duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-50}> About Us </Link>
+                    <Link to='about' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-50}> About Us </Link>
                 </div>
                 <div className={styles.right}>
-                    <Link to='contact' spy={true} smooth={true} duration={200} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-30} >
-                    <button> Contact Us </button>
-                    </Link>
+                    <div className={styles.btnWrapper}>
+                        <Link to='contact' spy={true} smooth={true} duration={200} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-30} className={styles.contactBtn} >
+                            <button> Contact Us </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

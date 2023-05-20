@@ -80,19 +80,23 @@
             justify-content: center;
             align-items: center;
 
-            button {
-                outline: none;
-                border: none;
-                color: #F2F2F2;
-                border: 2px solid;
-                border-color: rgb(175, 190, 255);
-                border-color: linear-gradient(to right, #AFBEFF 0%, #F2F2F2 100%);
-                background-color: #040D22 !important;
-                font-size: 16px;
-                border-radius: 5px;
-                width: 120px;
-                height: 35px;
-                cursor: pointer;
+            .btnWrapper {
+                width: 80%;
+                button {
+                    outline: none;
+                    border: none;
+                    color: #F2F2F2;
+                    border: 2px solid;
+                    border-color: rgb(175, 190, 255);
+                    border-color: linear-gradient(to right, #AFBEFF 0%, #F2F2F2 100%);
+                    background-color: #040D22 !important;
+                    font-size: 16px;
+                    border-radius: 5px;
+                    width: 120px;
+                    height: 35px;
+                    cursor: pointer !important;
+                    z-index: 999;
+                }
             }
         }
     }

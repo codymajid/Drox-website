@@ -13,15 +13,23 @@ export const Type4Para = 'Seamless mobile app experiences with high engagement l
 
 
 export const style1 = {
-    width : "600px",
-    height : "650px",
-    borderRadius : "12px",
-    marginTop : "65px",
-    marginBottom : "65px",
+    width : "450px",
+    height : "450px",
 }
 
+
 export const style2 = {
-    width : "300px",
-    height : "550px",
-    borderRadius : "12px",
+    width : "400px",
+    height : "450px",
+}
+
+export const style3 = {
+    width : "500px",
+    height : "450px",
+}
+
+
+export const style4 = {
+    width : "290px",
+    height : "500px",
 }

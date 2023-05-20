@@ -29,7 +29,10 @@ const ServiceComp = ({ data, title, text, image, style }) => {
                 </div>
             </div>
             <div className={styles.right}>
-                r
+                <div className={styles.shadowR}></div>
+                <div className={styles.wrapperImages} style={style} >
+                    <Image src={image} />
+                </div>
             </div>
         </div>
     )

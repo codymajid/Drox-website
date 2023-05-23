@@ -3,16 +3,23 @@ import styles from './contact.module.scss';
 import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
 import { Facebook, Instagram, LocationCity, Mail, PhoneRounded, Place, Twitter } from '@mui/icons-material';
+import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
     const [value, setValue] = useState()
     const form = useRef(null)
 
-
     const handleSubmit = (e) => {
-        e.preventDefault()
-    }
+        e.preventDefault();
+
+        emailjs.sendForm('service_sx4lh15', 'template_ocv3i57', form.current, '5kK82qyA7K6_YpWeK')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <div className={styles.contact} id='contact'>
@@ -54,7 +61,7 @@ const Contact = () => {
                     </div>
                     <div className={styles.rightWrapper}>
                         <div className={styles.right}>
-                            <form onSubmit={handleSubmit}>
+                            <form onSubmit={handleSubmit} ref={form}>
                                 <div className={styles.wraperFields}>
                                     <div className={styles.inputWrapper}>
                                         <label htmlFor="">First Name</label>

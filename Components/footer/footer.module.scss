@@ -181,6 +181,11 @@
                     border-color: rgb(175, 190, 255);
                     border-color: linear-gradient(to right, #AFBEFF 0%, #F2F2F2 100%);
                     cursor: pointer;
+                    transition: all 0.3s ease-in;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
                 }
 
                 .socialLinks {

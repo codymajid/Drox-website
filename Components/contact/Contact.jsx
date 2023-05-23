@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './contact.module.scss';
 import PhoneInput from 'react-phone-number-input'
 import 'react-phone-number-input/style.css'
@@ -7,7 +7,13 @@ import { Facebook, Instagram, LocationCity, Mail, PhoneRounded, Place, Twitter }
 
 const Contact = () => {
     const [value, setValue] = useState()
-    
+    const form = useRef(null)
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
     return (
         <div className={styles.contact} id='contact'>
             <div className={styles.top}>
@@ -48,38 +54,40 @@ const Contact = () => {
                     </div>
                     <div className={styles.rightWrapper}>
                         <div className={styles.right}>
-                            <div className={styles.wraperFields}>
-                                <div className={styles.inputWrapper}>
-                                    <label htmlFor="">First Name</label>
-                                    <input className={styles.inputFields} type="text" />
+                            <form onSubmit={handleSubmit}>
+                                <div className={styles.wraperFields}>
+                                    <div className={styles.inputWrapper}>
+                                        <label htmlFor="">First Name</label>
+                                        <input className={styles.inputFields} type="text" />
+                                    </div>
+                                    <div className={styles.inputWrapper}>
+                                        <label htmlFor="">Last Name</label>
+                                        <input type="text" className={styles.inputFields} />
+                                    </div>
                                 </div>
-                                <div className={styles.inputWrapper}>
-                                    <label htmlFor="">Last Name</label>
-                                    <input type="text" className={styles.inputFields} />
+                                <div className={styles.singleWrapper}>
+                                    <label htmlFor="">Email</label>
+                                    <input type="text" className={styles.singleInput} />
                                 </div>
-                            </div>
-                            <div className={styles.singleWrapper}>
-                                <label htmlFor="">Email</label>
-                                <input type="text" className={styles.singleInput} />
-                            </div>
-                            <div className={styles.mobileNumber}>
-                                <label htmlFor="">Phone</label>
-                                <div className={styles.inputWrapper}>
-                                    <PhoneInput
-                                        placeholder="Enter Phone Number"
-                                        value={value}
-                                        onChange={setValue}
-                                        className={styles.singleInput}
-                                    />
+                                <div className={styles.mobileNumber}>
+                                    <label htmlFor="">Phone</label>
+                                    <div className={styles.inputWrapper}>
+                                        <PhoneInput
+                                            placeholder="Enter Phone Number"
+                                            value={value}
+                                            onChange={setValue}
+                                            className={styles.singleInput}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className={styles.singleWrapper}>
-                                <label htmlFor=""> Message </label>
-                                <textarea id="" cols="30" rows="6" className={styles.textArea} placeholder='Type here...' />
-                            </div>
-                            <div style={{ display: "flex", alignItems: "flex-end", justifyContent:"end", paddingTop : "22px" }}>
-                                <button className={styles.msgBtn}> Send Message </button>
-                            </div>
+                                <div className={styles.singleWrapper}>
+                                    <label htmlFor=""> Message </label>
+                                    <textarea id="" cols="30" rows="6" className={styles.textArea} placeholder='Type here...' />
+                                </div>
+                                <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "end", paddingTop: "22px" }}>
+                                    <input type='submit' className={styles.msgBtn} value={"Send Message"} /> 
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

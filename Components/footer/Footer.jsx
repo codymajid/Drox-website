@@ -40,7 +40,7 @@ const Footer = () => {
                         <span>Team</span>
                     </div>
                     <div className={styles.four}>
-                    <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-60} activeClass={styles.active}> 
+                    <Link to='hero' spy={true} duration={2.8} smooth={true} style={{ color: "inherit", textDecoration: "none", cursor: "pointer" }} offset={-65} activeClass={styles.active}> 
                         <span className={styles.arrowRightHolder}> <KeyboardArrowUp className={styles.KeyboardArrowRightIcon} /></span>
                         </Link>
                         <div className={styles.socialLinks}>

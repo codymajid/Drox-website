@@ -14,16 +14,16 @@ const Hero = () => {
             <div className={styles.rightHeroShadow}></div>
             <div className={styles.top}>
                 <motion.div 
-                initial={{y: -50, scale : 2, opacity : 0.8}}
-                animate={{y: 0, scale : 1, opacity : 0.8, textAlign:"center"}}
+                initial={{y: -50, scale : 2, opacity : 0.8, width : "100%", height : "100vh", display : "flex", justifyContent : "center", alignItems : "center"}}
+                animate={{y: 0, scale : 1, opacity : 1,width : "100%", height : "unset"}}
                 transition={{duration : 2, delay : 0.5}}
                 className={styles.head}>
                     <h1> At Centricord We Make  </h1>
                     <h1> Your Ideas Work. </h1>
                 </motion.div>
                 <motion.div 
-                initial = {{visibility : "hidden", opacity : 0}}
-                animate = {{visibility : "visible", opacity : 1}}
+                initial = {{visibility : "hidden", opacity : 0, x : "-100vw"}}
+                animate = {{visibility : "visible", opacity : 1, x : "-100vw"}}
                 transition={{ delay : 2, duration : 1}}
                 className={styles.paragraphHero}>
                     <span> Centicord is a central hub for those who have an idea in their mind,and require   </span>

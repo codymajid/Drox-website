@@ -5,6 +5,8 @@ import SS from '../../images/ss.png';
 import Turtle from '../../images/turtle.png';
 import Budweiser from '../../images/Budweiser.png';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
 
 const About = () => {
     return (
@@ -20,17 +22,27 @@ const About = () => {
             </div>
             <div className={styles.bottom}>
                 <div className={styles.wrapper}>
-                    <div className={styles.bottomTopWrapper}>
+                    <motion.div 
+                    initial = {{opacity : 0}}
+                    animate = {{opacity : 1}}
+                    whileInView={{ opacity: 1, scale : 1.2}}
+                    transition={{delay : 1, duration : 2}}
+                    className={styles.bottomTopWrapper}>
                         <h6> About Us</h6>
                         <h1> Who We Are</h1>
                         <p className={styles.para}>Centricord is a group of highly talented individuals in the field of technology who came together with the dream of building a great technology entity which would impact lives of millions positively. We design & develop applications that are innovative on the tech-front.</p>
-                    </div>
+                    </motion.div>
                     <p className={styles.line}></p>
                     <div className={styles.ratings}>
-                        <div className={styles.ratingsItem}>
+                        <motion.div 
+                        drag='x'
+                        dragConstraints={{ left: 0, right: 30, }}
+                        dragMomentum={false}
+                        dragTransition={{ bounceStiffness: 20, bounceDamping : 10}}
+                        className={styles.ratingsItem}>
                             <span className={styles.headItem}>200+</span>
                             <span className={styles.bodyItem}>Successfull Projects</span>
-                        </div>
+                        </motion.div>
                         <div className={styles.ratingsItem}>
                             <span className={styles.headItem}>190+</span>
                             <span className={styles.bodyItem}>Satisfied Customer</span>

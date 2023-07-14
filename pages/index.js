@@ -5,6 +5,7 @@ import About from '@/Components/about/About'
 import Service from '@/Components/services/Service'
 import Contact from '@/Components/contact/Contact'
 import Footer from '@/Components/footer/Footer'
+import Map from '@/Components/map/Map'
 
 
 
@@ -22,6 +23,7 @@ export default function Home() {
       <About />
       <Service />
       <Contact />
+      <Map />
       <Footer />
     </>
   )
